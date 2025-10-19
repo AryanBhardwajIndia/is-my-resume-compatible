@@ -2,7 +2,7 @@
 
 A resume-job compatibility checker which parses the job description and resume for similar keywords and return the compatibility score based off the keywords.
 
-##Technology Used
+## Technology Used
 
 React.js, Node.js, Express.js
 
@@ -13,10 +13,10 @@ React.js, Node.js, Express.js
 
 ## Structure
 
-is-my-resume-compatible?
-|
-|-backend/resume-checker-backend
-|
+is-my-resume-compatible?<br />
+|<br />
+|-backend/resume-checker-backend<br />
+|<br />
 |_frontend/resume-checker-frontend
 
 ## Working
