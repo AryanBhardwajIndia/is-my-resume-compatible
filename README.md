@@ -1,4 +1,4 @@
-#Is My Resume Compatible?
+# Is My Resume Compatible?
 
 A resume-job compatibility checker which parses the job description and resume for similar keywords and return the compatibility score based off the keywords.
 
@@ -6,12 +6,12 @@ A resume-job compatibility checker which parses the job description and resume f
 
 React.js, Node.js, Express.js
 
-##Divisons
+## Divisons
 
 1. Frontend
 2. Backend
 
-##Structure
+## Structure
 
 is-my-resume-compatible?
 |
@@ -19,14 +19,14 @@ is-my-resume-compatible?
 |
 |_frontend/resume-checker-frontend
 
-##Working
+## Working
 
 1. API call is executed when both the fields are filled and then backend API is called.
 2. Backend API then fetches the keywords from the link.
 3. Resume is saved in react state, not stored in the database, which is converted to text.
 4. Keyword pairs are formed and the compatibility is returned as a score.
 
-##Installation
+## Installation
 
 1. Clone the GitHub repository
 ```bash
