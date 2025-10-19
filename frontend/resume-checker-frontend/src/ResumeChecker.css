@@ -1,0 +1,443 @@
+.resume-checker-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #faf5ff, #eff6ff, #eef2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.resume-checker-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  width: 100%;
+  max-width: 42rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #e0e7ff;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.header-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #4f46e5;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input Sections */
+.input-section {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.job-link-section {
+  background: linear-gradient(to right, #dbeafe, #e0e7ff);
+}
+
+.job-link-section:hover {
+  border-color: #c7d2fe;
+}
+
+.resume-section {
+  background: linear-gradient(to right, #fae8ff, #fce7f3);
+}
+
+.resume-section:hover {
+  border-color: #e9d5ff;
+}
+
+.input-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.label-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.label-icon:first-child {
+  color: #4f46e5;
+}
+
+.resume-section .label-icon {
+  color: #9333ea;
+}
+
+/* Text Input */
+.text-input {
+  width: 95%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #374151;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.text-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* File Upload */
+.upload-wrapper {
+  position: relative;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  padding: 2rem 1rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.file-label:hover {
+  border-color: #a855f7;
+  background-color: #faf5ff;
+}
+
+.file-content {
+  text-align: center;
+}
+
+.upload-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 0.5rem;
+  color: #9ca3af;
+}
+
+.file-text {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #9333ea;
+}
+
+.upload-prompt {
+  font-weight: 500;
+  color: #9333ea;
+}
+
+.upload-hint {
+  color: #6b7280;
+}
+
+.file-info {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #059669;
+}
+
+.success-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-button.active {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button.active:hover {
+  background: linear-gradient(to right, #4338ca, #7e22ce);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.submit-button.disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #dbeafe;
+  border-radius: 0.5rem;
+  border: 1px solid #bfdbfe;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #1e40af;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .resume-checker-card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input-label {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+  }
+}
+
+/* Add these to your existing ResumeChecker.css file */
+
+/* Results Container */
+.results-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f9fafb, #ffffff);
+  border-radius: 1rem;
+  border: 2px solid #e5e7eb;
+}
+
+/* Score Section */
+.score-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.results-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.score-description {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Keywords Section */
+.keywords-section {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.keywords-section.matching {
+  background: linear-gradient(to right, #d1fae5, #a7f3d0);
+  border: 2px solid #6ee7b7;
+}
+
+.keywords-section.missing {
+  background: linear-gradient(to right, #fee2e2, #fecaca);
+  border: 2px solid #fca5a5;
+}
+
+.keywords-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.keyword-match {
+  background-color: #10b981;
+  color: white;
+}
+
+.keyword-missing {
+  background-color: #ef4444;
+  color: white;
+}
+
+.keywords-hint {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #7c2d12;
+  font-style: italic;
+}
+
+/* Loading state */
+.submit-button.active:disabled {
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  opacity: 0.7;
+  cursor: wait;
+}
+
+/* Add these styles to your existing ResumeChecker.css */
+
+/* Uploaded File Display */
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  background: white;
+  border: 2px solid #a855f7;
+  border-radius: 0.75rem;
+  gap: 1rem;
+  transition: all 0.2s;
+}
+
+.uploaded-file:hover {
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.2);
+}
+
+.file-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #9333ea;
+  flex-shrink: 0;
+}
+
+.file-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.file-name-display {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.remove-file-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #fee2e2;
+  color: #dc2626;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.remove-file-btn:hover {
+  background-color: #dc2626;
+  color: white;
+  transform: scale(1.1);
+}
+
+.remove-file-btn:active {
+  transform: scale(0.95);
+}
