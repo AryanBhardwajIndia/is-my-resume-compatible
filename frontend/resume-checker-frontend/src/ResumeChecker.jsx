@@ -1,4 +1,3 @@
-// ResumeChecker.jsx
 import { useState } from 'react';
 import { Upload, Link, FileText, CheckCircle, X } from 'lucide-react';
 import './ResumeChecker.css';
@@ -18,7 +17,6 @@ export default function ResumeChecker() {
 
   const handleRemoveFile = () => {
     setResume(null);
-    // Reset the file input
     const fileInput = document.getElementById('resume-upload');
     if (fileInput) {
       fileInput.value = '';
@@ -71,7 +69,6 @@ export default function ResumeChecker() {
         </div>
 
         <div className="form-container">
-          {/* Job Link Input */}
           <div className="input-section job-link-section">
             <label className="input-label">
               <Link className="label-icon" />
@@ -92,7 +89,6 @@ export default function ResumeChecker() {
             )}
           </div>
 
-          {/* Resume Upload */}
           <div className="input-section resume-section">
             <label className="input-label">
               <Upload className="label-icon" />
@@ -145,7 +141,6 @@ export default function ResumeChecker() {
             )}
           </div>
 
-          {/* Submit Button */}
           <button
             onClick={handleSubmit}
             disabled={!isFormValid || loading}
@@ -155,7 +150,6 @@ export default function ResumeChecker() {
           </button>
         </div>
 
-        {/* Results Section */}
         {results && (
           <div className="results-container">
             <div className="score-section">
@@ -168,7 +162,6 @@ export default function ResumeChecker() {
               </p>
             </div>
 
-            {/* Matching Keywords */}
             {results.matchingKeywords.length > 0 && (
               <div className="keywords-section matching">
                 <h3 className="keywords-title">✅ Matching Keywords</h3>
@@ -182,7 +175,6 @@ export default function ResumeChecker() {
               </div>
             )}
 
-            {/* Missing Keywords */}
             {results.missingKeywords.length > 0 && (
               <div className="keywords-section missing">
                 <h3 className="keywords-title">⚠️ Missing Keywords</h3>
@@ -201,7 +193,6 @@ export default function ResumeChecker() {
           </div>
         )}
 
-        {/* Info Footer */}
         <div className="footer">
           <p className="footer-text">
             🔒 Your data is secure and will only be used for compatibility analysis
