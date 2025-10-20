@@ -13,12 +13,24 @@ React.js, Node.js, Express.js
 
 ## Structure
 
-is-my-resume-compatible?<br />
-|<br />
-|-backend/resume-checker-backend<br />
-|<br />
-|_frontend/resume-checker-frontend
-
+```
+. 
+├── backend/resume-checker-backend 
+│ ├── package-lock.json 
+│ ├── package.json 
+│ └── server.js 
+├── frontend/resume-checker-frontend
+│ ├── public/ 
+│ │ ├── index.html 
+│ │ └── manifest.json 
+│ └── src/ 
+│ ├── App.css 
+│ ├── App.js 
+│ ├── App.test.js 
+│ ├── index.css 
+│ └── index.js 
+└── package.json
+```
 ## Working
 
 1. API call is executed when both the fields are filled and then backend API is called.
