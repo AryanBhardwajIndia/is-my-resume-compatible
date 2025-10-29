@@ -2,6 +2,8 @@
 
 A resume-job compatibility checker which parses the job description and resume for similar keywords and return the compatibility score based off the keywords.
 
+Live: http://resumechecker.aryanbhardwaj.xyz
+
 ## Technology Used
 
 React.js, Node.js, Express.js
