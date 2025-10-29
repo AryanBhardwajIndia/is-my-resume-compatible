@@ -33,7 +33,7 @@ export default function ResumeChecker() {
     formData.append('resume', resume);
 
     try {
-      const response = await fetch('http://localhost:5001/api/check-compatibility', {
+      const response = await fetch('http://localhost:5001/api/check-compatibility', 'https://api.resumechecker.aryanbhardwaj.xyz',{
         method: 'POST',
         body: formData
       });
