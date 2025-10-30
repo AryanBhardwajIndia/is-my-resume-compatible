@@ -33,7 +33,7 @@ export default function ResumeChecker() {
     formData.append('resume', resume);
 
     try {
-      const response = await fetch('https://ykwlwhdg7l62cbzbr4hhufouiq0bskwq.lambda-url.eu-north-1.on.aws/',{
+      const response = await fetch('https://ykwlwhdg7l62cbzbr4hhufouiq0bskwq.lambda-url.eu-north-1.on.aws/api/check-compatibility',{
         method: 'POST',
         body: formData
       });
